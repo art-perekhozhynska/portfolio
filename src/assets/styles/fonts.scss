@@ -1,0 +1,131 @@
+$fontFamilySatoshiRegular: Satoshi-Regular, sans-serif;
+$fontFamilySatoshiMedium: Satoshi-Medium, sans-serif;
+$fontFamilySatoshiBold: Satoshi-Bold, sans-serif;
+
+// HEADINGS
+
+%heading-1 {
+	font-family: $fontFamilySatoshiMedium;
+	font-size: 180px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 0;
+}
+
+%heading-2 {
+	font-family: $fontFamilySatoshiBold;
+	font-size: 150px;
+	font-weight: 400;
+	line-height: 78%;
+	letter-spacing: 0;
+}
+
+%heading-3 {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 0;
+}
+
+%heading-4-bold {
+	font-family: $fontFamilySatoshiBold;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 78%;
+	letter-spacing: 0;
+}
+
+%heading-4-regular {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 0;
+}
+
+%heading-5-regular {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0;
+}
+
+%heading-5-medium {
+	font-family: $fontFamilySatoshiMedium;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 0;
+}
+
+%heading-5-bold {
+	font-family: $fontFamilySatoshiBold;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 0;
+}
+
+%heading-6 {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0;
+}
+
+// BODY TEXT
+
+%body-text-regular {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0;
+}
+
+%body-text-medium {
+	font-family: $fontFamilySatoshiMedium;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0;
+}
+
+%secondary-text-regular {
+	font-family: $fontFamilySatoshiRegular;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0;
+}
+
+// BUTTONS
+
+%button-text {
+	font-family: $fontFamilySatoshiMedium;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 0;
+}
+
+// LOGO
+
+%logo-desktop {
+	font-family: $fontFamilySatoshiBold;
+	font-size: 174px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 3.5px;
+}
+
+%logo-mobile {
+	font-family: $fontFamilySatoshiBold;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 110%;
+	letter-spacing: 1px;
+}

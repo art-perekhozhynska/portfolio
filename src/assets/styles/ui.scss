@@ -1,0 +1,64 @@
+// Shadow
+
+%shadow_xxs {
+    box-shadow: 0 1px 2px 0 #1111130d;
+}
+
+%shadow_xs {
+    box-shadow: 0 1px 2px 0 #1111130f;
+}
+
+%shadow_s {
+    box-shadow: 0 4px 8px -2px #1111131a;
+}
+
+%shadow_m {
+    box-shadow: 0 12px 16px -4px #1111131a;
+}
+
+%shadow_l {
+    box-shadow: 0 20px 24px -4px #1111131a;
+}
+
+%shadow_xl {
+    box-shadow: 0 24px 48px -12px #11111333;
+}
+
+%shadow_xxl {
+    box-shadow: rgba(0, 0, 0, 0.01) 0.796192px 0 0.796192px 0,
+    rgba(0, 0, 0, 0.03) 2.41451px 0 2.41451px 0,
+    rgba(0, 0, 0, 0.08) 6.38265px 0 6.38265px 0,
+    rgba(0, 0, 0, 0.25) 20px 0 20px 0;
+}
+
+// Blur
+
+%blur_s {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+%blur_m {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+%blur_l {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+%blur_xl {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
+
+// Containers
+
+%block_container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+}

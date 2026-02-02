@@ -1,0 +1,183 @@
+//PRIMITIVES
+
+//White
+
+$white: #ffffff;
+
+// Black
+
+$black_scale_90: rgba(22, 22, 22, 0.9);
+$black_scale_80: rgba(22, 22, 22, 0.8);
+$black_scale_70: rgba(22, 22, 22, 0.7);
+$black_scale_60: rgba(22, 22, 22, 0.6);
+$black_scale_50: rgba(22, 22, 22, 0.5);
+$black_scale_40: rgba(22, 22, 22, 0.4);
+$black_scale_30: rgba(22, 22, 22, 0.3);
+$black_scale_20: rgba(22, 22, 22, 0.2);
+$black_scale_10: rgba(22, 22, 22, 0.1);
+
+// Gray scale
+
+$gray_scale_100: #111111;
+$gray_scale_90: #161616;
+$gray_scale_80: #282727;
+$gray_scale_70: #696868;
+$gray_scale_60: #7E7D7D;
+$gray_scale_50: #A7A6A6;
+$gray_scale_40: #C6C4C4;
+$gray_scale_30: #E8E7E7;
+$gray_scale_20: #F2F1F1;
+$gray_scale_10: #F7F6F6;
+$gray_scale_0: #FCFBFB;
+
+// Primary
+
+$primary_60: #FBE320;
+$primary_50: #F7F326;
+$primary_40: #FBF850;
+$primary_30: #F6F46D;
+$primary_20: #F9F899;
+$primary_10: #FCFBC2;
+
+// Error
+
+$error_60: #c92a2a;
+$error_50: #e24343;
+$error_40: #de655a;
+$error_30: #ee917d;
+$error_20: #f9bfaa;
+$error_10: #fce2d4;
+
+// Info
+
+$info_60: #1f4fdb;
+$info_50: #2b67ff;
+$info_40: #6091ff;
+$info_30: #7fabff;
+$info_20: #aac9ff;
+$info_10: #d4e5ff;
+
+// Warning
+
+$warning_60: #dbbc39;
+$warning_50: #ffe14e;
+$warning_40: #ffea7a;
+$warning_30: #fff094;
+$warning_20: #fff6b8;
+$warning_10: #fffbdb;
+
+// Success
+
+$success_60: #19a55a;
+$success_50: #23c05c;
+$success_40: #53d977;
+$success_30: #78ec8b;
+$success_20: #a7f8ac;
+$success_10: #d4fbd2;
+
+// VARIABLES
+
+// Tabs
+
+$tabs: $gray_scale_40;
+
+// Background
+
+$white_background: $gray_scale_0;
+$black_background: $gray_scale_100;
+$yellow_background: $primary_30;
+
+// Text
+
+$text_main_black: $gray_scale_90;
+$text_main_white: $gray_scale_0;
+
+$text_secondary: $gray_scale_60;
+$text_tertiary: $gray_scale_50;
+
+$text_success: $success_50;
+$text_info: $info_50;
+$text_error: $error_50;
+$text_accent: $primary_40;
+
+$text_disable: $gray_scale_90;
+
+// Stroke
+
+$stroke_gray: $gray_scale_80;
+$stroke_white: $gray_scale_10;
+$stroke_yellow: $primary_40;
+
+$stroke_error: $error_50;
+
+// Icon
+
+$icon_black_default: $gray_scale_100;
+$icon_black_hover: $gray_scale_80;
+$icon_black_pressed: $gray_scale_80;
+$icon_black_disabled: $gray_scale_70;
+
+$icon_white_default: $gray_scale_0;
+$icon_white_hover: $gray_scale_40;
+$icon_white_pressed: $gray_scale_60;
+$icon_white_disabled: $gray_scale_70;
+
+$icon_yellow_default: $primary_40;
+$icon_yellow_hover: $primary_50;
+$icon_yellow_pressed: $primary_60;
+$icon_yellow_disabled: $gray_scale_70;
+
+// Buttons
+
+$button_black_default: $gray_scale_100;
+$button_black_hover: $gray_scale_90;
+$button_black_pressed: $gray_scale_70;
+$button_black_disabled: $gray_scale_50;
+$button_black_danger: $error_50;
+
+$button_white_default: $gray_scale_0;
+$button_white_hover: $gray_scale_50;
+$button_white_pressed: $gray_scale_60;
+$button_white_disabled: $gray_scale_80;
+$button_white_danger: $error_50;
+
+$button_gray_default: $gray_scale_90;
+$button_gray_hover: $gray_scale_90;
+$button_gray_pressed: $gray_scale_80;
+$button_gray_disabled: $gray_scale_90;
+$button_gray_danger: $error_50;
+
+$button_yellow_default: $primary_50;
+$button_yellow_hover: $primary_60;
+$button_yellow_pressed: $primary_40;
+$button_yellow_disabled: $primary_20;
+
+// Border
+
+$border_default: $gray_scale_100;
+$border_hover: $gray_scale_90;
+$border_pressed: $gray_scale_70;
+$border_disabled: $gray_scale_50;
+$border_danger: $error_50;
+
+// Logo
+
+$logo_gray: $black_scale_20;
+$logo_white: $gray_scale_0;
+$logo_yellow: $primary_40;
+
+// Card
+
+$card_background_transparent: $black_scale_80;
+$card_background: $gray_scale_90;
+$card_stroke: $gray_scale_10;
+
+// OTHER
+
+// Icons
+
+$icon_color: var(--icon-color, $icon_black_default);
+
+@mixin set-icon-color($color) {
+	--icon-color: #{$color};
+}
