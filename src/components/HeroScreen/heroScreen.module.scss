@@ -1,0 +1,59 @@
+@import 'src/assets/styles/fonts';
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/ui';
+@import 'src/assets/styles/breakpoints';
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	padding: 0 80px;
+
+	background-color: $black_background;
+
+	.typography {
+		display: flex;
+		flex-direction: column;
+		//justify-content: flex-start;
+
+		//color: white;
+
+		.title {
+			display: flex;
+			flex-direction: row;
+
+			h1 {
+				background-image: url('../../assets/img/title_background_color.png');
+				background-size: 20%;
+				//background-position: -20px 22px;
+				background-color: white;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+
+				color: transparent;
+                opacity: 0.8;
+				font-family: Anton, sans-serif;
+				font-size: 190px;
+				font-weight: 400;
+				line-height: 110%;
+				letter-spacing: 0;
+
+				filter: brightness(1) contrast(140%) blur(0);
+
+			}
+
+		}
+
+		h3 {
+			width: 100%;
+
+			text-align: end;
+
+			color: white;
+		}
+	}
+}

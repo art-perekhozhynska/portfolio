@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import HomeLocationLayout from './components/HomeLocationLayout/HomeLocationLayout';
+import HeroScreen from './components/HeroScreen/HeroScreen';
+
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      Hello, ART
-    </div>
-  );
-}
+const App = () => {
+	useEffect(() => {
+		const vh = window.innerHeight / 100;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}, []);
+
+	return (
+		<>
+			<HeroScreen />
+			<HomeLocationLayout />
+		</>
+	);
+};
 
 export default App;
