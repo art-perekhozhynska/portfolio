@@ -1,0 +1,11 @@
+@import 'src/assets/styles/fonts';
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/ui';
+@import 'src/assets/styles/breakpoints';
+@import 'src/assets/styles/animations';
+
+.title {
+	.char {
+		@extend %bottom_appearance;
+	}
+}

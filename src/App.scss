@@ -2,25 +2,6 @@
 @import 'src/assets/styles/colors';
 @import 'src/assets/styles/swiperStyles.module';
 
-// Fonts
-
-//@font-face {
-//  font-family: 'Satoshi-Regular';
-//  src: url('../public/fonts/Satoshi/Satoshi-Regular.woff') format('woff');
-//}
-//
-//@font-face {
-//  font-family: 'Satoshi-Medium';
-//  src: url('../public/fonts/Satoshi/Satoshi-Medium.woff') format('woff');
-//}
-//
-//
-//@font-face {
-//  font-family: 'Satoshi-Bold';
-//  src: url('../public/fonts/Satoshi/Satoshi-Bold.woff') format('woff');
-//}
-
-
 // Default styles reset
 
 html,
@@ -62,10 +43,6 @@ h2 {
 
 h3 {
   @extend %heading-3;
-}
-
-h6 {
-  @extend %heading-6;
 }
 
 input:-webkit-autofill,

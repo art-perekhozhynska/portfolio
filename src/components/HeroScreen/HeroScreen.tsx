@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 
 import classes from './heroScreen.module.scss';
 
-import TitlePhoto from '../../assets/img/title_photo.png';
+import TitlePhoto from '../../assets/img/Title_photo.png';
+import AnimatedTitle from '../AnimatedTitle/AnimatedTitle';
 
 interface THeroScreenProps {}
 
@@ -11,23 +12,14 @@ const HeroScreen: FC<THeroScreenProps> = props => {
 
 	return (
 		<div className={classes.container}>
-			<div className={classes.typography}>
-				<div className={classes.title}>
-					<h1>
-						ANASTASIA
-					</h1>
-					{/*<span>AN</span>*/}
-					{/*<span>AS</span>*/}
-					{/*<span>TA</span>*/}
-					{/*<span>SIA</span>*/}
-				</div>
-
-				<h3>2D Artist & UI/UX designer</h3>
+			<div className={classes.upper_part}>
+				{/*<h1>ANASTASIA</h1>*/}
+				<AnimatedTitle text="ANASTASIA"/>
+				<img src={TitlePhoto} alt="pic" />
 			</div>
-			{/*<img*/}
-			{/*	src={TitlePhoto}*/}
-			{/*	alt="pic"*/}
-			{/*/>*/}
+			<div className={classes.lower_part}>
+				<h3>UI/UX DESIGNER &</h3><h1>2D ARTIST</h1>
+			</div>
 		</div>
 	);
 };

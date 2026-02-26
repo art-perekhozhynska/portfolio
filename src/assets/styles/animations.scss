@@ -1,115 +1,22 @@
 // COMMON. Appearing animations
 
-%visible_element {
-	opacity: 1;
-	transform: translate(0);
-	transition:
-		transform 1.5s ease,
-		opacity 1.5s ease;
-}
-
 %bottom_appearance {
 	opacity: 0;
 	transform: translateY(100%);
 
 	&[data-is-in-viewport='true'] {
-		@extend %visible_element;
+		animation-name: bottom-appearance;
+		animation-duration: 2s;
+		//animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: ease;
+		animation-iteration-count: initial;
+		animation-fill-mode: forwards;
 	}
 }
 
-%right_appearance {
-	opacity: 0;
-	transform: translateX(100%);
-
-	&[data-is-animation-active='true'] {
-		@extend %visible_element;
-	}
-}
-
-// HOME PAGE. Expertise block. Arrow rotation
-
-%arrow_animation {
-	transform: translateX(0) rotate(0);
-	opacity: 1;
-
-	animation-name: arrow-animation;
-	animation-delay: 0s;
-	animation-duration: 5.7s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-
-	@keyframes arrow-animation {
-		0% {
-			opacity: 1;
-			transform: translateX(0) rotate(0);
-		}
-		85% {
-			opacity: 1;
-			transform: translateX(0) rotate(-90deg);
-		}
-		100% {
-			opacity: 0;
-			transform: translateX(200px) rotate(-90deg);
-		}
-	}
-}
-
-// HOME PAGE. Expertise text
-
-%expertise_text_animation {
-	transform: translateX(200px);
-	opacity: 0;
-
-	animation-name: expertise-text;
-	animation-delay: 0s;
-	animation-duration: 0.2s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-
-	@keyframes expertise-text {
-		100% {
-			opacity: 1;
-			transform: translateX(0);
-		}
-	}
-}
-
-// Clockwise border fill
-
-%clockwise_border_fill {
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		border: 3px solid #3498db;
-		border-radius: 7px;
-		box-sizing: border-box;
-		pointer-events: none;
-
-		//clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-		clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-
-		//animation-name: clockwise-border-fill;
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
-		animation-delay: 0s;
-	}
-
-	@keyframes clockwise-border-fill {
-		0% {
-			clip-path: polygon(0% 0%, 100% 0%, 0% 0%, 0% 0%);
-		}
-		//25% {
-		//	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 0%);
-		//}
-		//50% {
-		//	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-		//}
-		100% {
-			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-		}
+@keyframes bottom-appearance {
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }

@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { InViewHookResponse, useInView } from 'react-intersection-observer';
 
 //
 
@@ -24,3 +25,21 @@ export const useBreakpoints = () => {
 
 	return { xsScreen, smScreen, mdScreen, lgScreen, xlScreen };
 };
+
+//
+
+type TUseInViewportResult = [InViewHookResponse['ref'], boolean, boolean];
+
+export const useInViewport = (): TUseInViewportResult => {
+	const [wasInViewport, setWasInViewport] = useState(false);
+	const [ref, inView] = useInView();
+
+	useEffect(() => {
+		if (inView) {
+			setWasInViewport(true);
+		}
+	}, [wasInViewport || inView]);
+
+	return [ref, wasInViewport, inView];
+};
+

@@ -20,7 +20,7 @@ const HomeLocationScene: FC<THomeLocationSceneProps> = props => {
 			camera={{ position: [0, 0, 0], fov: 45 }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
-				{' '}
+
 				// todo add loader
 				<Bounds
 					fit
