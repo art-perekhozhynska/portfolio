@@ -4,11 +4,11 @@
 	opacity: 0;
 	transform: translateY(100%);
 
-	&[data-is-in-viewport='true'] {
+	&[data-is-animation-start='true'] {
 		animation-name: bottom-appearance;
 		animation-duration: 2s;
-		//animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-		animation-timing-function: ease;
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		//animation-timing-function: ease;
 		animation-iteration-count: initial;
 		animation-fill-mode: forwards;
 	}

@@ -5,16 +5,18 @@ import classes from './heroScreen.module.scss';
 import TitlePhoto from '../../assets/img/Title_photo.png';
 import AnimatedTitle from '../AnimatedTitle/AnimatedTitle';
 
-interface THeroScreenProps {}
+interface THeroScreenProps {
+	animationStart: boolean
+}
 
 const HeroScreen: FC<THeroScreenProps> = props => {
-	const {} = props;
+	const {animationStart} = props;
 
 	return (
 		<div className={classes.container}>
 			<div className={classes.upper_part}>
 				{/*<h1>ANASTASIA</h1>*/}
-				<AnimatedTitle text="ANASTASIA"/>
+				<AnimatedTitle text="ANASTASIA" animationStart/>
 				<img src={TitlePhoto} alt="pic" />
 			</div>
 			<div className={classes.lower_part}>

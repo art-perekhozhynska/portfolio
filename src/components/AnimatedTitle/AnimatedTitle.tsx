@@ -6,11 +6,12 @@ import classes from './AnimatedTitle.module.scss';
 
 interface TAnimatedTitleProps {
 	text: string;
+	animationStart?: boolean;
 	className?: string;
 }
 
 const AnimatedTitle: FC<TAnimatedTitleProps> = props => {
-	const { text, className: providedClassName } = props;
+	const { text, animationStart = false, className: providedClassName } = props;
 
 	const [titleRef, isTitleInViewport] = useInViewport();
 	const containerClassName = useCompositeClassName(providedClassName, classes.title);
@@ -21,11 +22,11 @@ const AnimatedTitle: FC<TAnimatedTitleProps> = props => {
 			className={containerClassName}
 		>
 			{text.split('').map((char, i) => {
-				const animationDelay = `${i * 0.2}s`;
+				const animationDelay = `${i * 0.2 + 0.5}s`;
 				return (
 					<span
 						className={classes.char}
-						data-is-in-viewport={isTitleInViewport}
+						data-is-animation-start={animationStart}
 						style={{ animationDelay }}
 						key={i}
 					>

@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber';
 import { Bounds, Center, OrbitControls } from '@react-three/drei';
 
 import HomeLocation from './HomeLocation';
-import CanvasLoader from '../../loaders/CanvasLoader/CanvasLoader';
 
 import { useBreakpoints } from '../../../services/hooks';
 
@@ -19,9 +18,7 @@ const HomeLocationScene: FC<THomeLocationSceneProps> = props => {
 			style={{ width: '100%', height: '100%' }}
 			camera={{ position: [0, 0, 0], fov: 45 }}
 		>
-			<Suspense fallback={<CanvasLoader />}>
-
-				// todo add loader
+			<Suspense fallback={null}>
 				<Bounds
 					fit
 					margin={smScreen ? 0.8 : 0.9}
@@ -30,8 +27,6 @@ const HomeLocationScene: FC<THomeLocationSceneProps> = props => {
 						<HomeLocation />
 					</Center>
 				</Bounds>
-				{/*<LightScene />*/}
-				{/*{isAxesHelper && <axesHelper args={[10]} />}*/}
 			</Suspense>
 			<ambientLight
 				intensity={6}
